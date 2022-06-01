@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'function.dart';
+import 'Dashboard/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Dashboard(),
+      ),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_second_app/class.dart';
 
-import 'function.dart';
+import 'new.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: New(),
+      ),
     );
   }
 }
