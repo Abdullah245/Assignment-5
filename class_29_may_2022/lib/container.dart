@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 Cont(double w, t) {
   return Container(
+    
     child: Text(
       t,
       style: TextStyle(
